@@ -93,27 +93,35 @@ Explore predictions and performance in an interactive Streamlit dashboard (no im
 
 ---
 
-## 🧠 Usage
+##  Usage
 
 Once launched, the dashboard allows users to:
 
-* Toggle between models (real vs synthetic features)
-* View feature importances
-* Compare metrics like accuracy, precision, recall, and F1-score
-* Understand the drivers of SBA loan defaults
+Toggle between models (real vs. synthetic features)
+
+View feature importances with interactive visualizations
+
+Compare evaluation metrics such as accuracy, precision, recall, F1-score, ROC AUC, and calibration curves
+
+Upload loan application documents or images for OCR extraction and default probability prediction
+
+Adjust any loan feature (e.g., interest rate, DSCR, number of employees) in real time to see updated default probabilities
+
+Explore and interpret the drivers behind SBA loan defaults through clear, data-driven insights
 
 ---
 
 ## 🗂 Project Structure
 
 ```
-sba-loan-predictor/
-├── data/                  # Data files (real & augmented)
-├── models/                # Saved model files (.pkl)
-├── src/                   # Core code: training, preprocessing
-├── app.py                 # Streamlit app
-├── requirements.txt       # Dependencies
-└── README.md              # Project documentation
+LoanDefaultPredictionModel/
+├── .venv/                  # Virtual environment
+├── dashboard.py            # Streamlit dashboard application
+├── Train_model.py          # Model training script
+├── .gitignore              # Git ignore rules
+├── LICENSE                 # License information
+├── README.md               # Project documentation
+└── pyvenv.cfg               # Virtual environment configuration
 ```
 
 ---
@@ -140,14 +148,52 @@ Please ensure your PRs are well-tested and documented.
 
 ---
 
-## 🙌 Credits
+## 📊 Model Performance
+After preprocessing and training on the SBA loan dataset (897,167 samples), the models produced the following results:
 
-Built with guidance from various open-source examples, tutorials, and documentation including:
+Real Features Model (13 columns):
 
-* [Scikit-learn Documentation](https://scikit-learn.org/stable/)
-* [Streamlit Documentation](https://docs.streamlit.io/)
-* Special thanks to my mentors and colleagues
+Train Accuracy: 0.9961
 
+Test Accuracy: 0.9294
+
+AUC-ROC Score: 0.960
+
+Brier Score: (not measured in this run)
+
+False Positives: 5,952
+
+False Negatives: 9,887
+
+Real + Synthetic Features Model (17 columns):
+
+Train Accuracy: 1.0000
+
+Test Accuracy: 0.9324
+
+AUC-ROC Score: 0.963
+
+Brier Score: 0.05195
+
+False Positives: 5,463
+
+False Negatives: 9,699
+
+Saved Models:
+
+loan_model_real.pkl — Trained with real features only
+
+loan_model_synth.pkl — Trained with both real and synthetic features
+
+Performance Insights:
+
+Synthetic features provided a modest improvement in both test accuracy and AUC-ROC.
+
+The Real+Synthetic model maintained strong calibration, as indicated by the low Brier score.
+
+Both models achieved high AUC-ROC values, indicating excellent discriminatory power.
+
+Lower false positives and false negatives in the Real+Synthetic model suggest better generalization.
 ---
 
 ## 📄 License
