@@ -59,7 +59,7 @@ Explore predictions and performance in an interactive Streamlit dashboard (no im
 
 ---
 
-## ⚙ Installation
+##  Installation
 
 1. Clone the repository:
    ```bash
