@@ -137,9 +137,11 @@ LoanDefaultPredictionModel/
 
 ##  Model Performance
 
+Model Performance
+
 After preprocessing and training on the SBA loan dataset (897,167 samples), the models achieved the following results:
 
-Real Features Model (13 columns)
+Real Features Model (13 columns):
 
 Train Accuracy: 99.61%
 
@@ -153,7 +155,7 @@ False Positives (FP): 5,952
 
 False Negatives (FN): 9,887
 
-Real + Synthetic Features Model (17 columns)
+Real + Synthetic Features Model (17 columns):
 
 Train Accuracy: 100.00%
 
@@ -167,13 +169,13 @@ False Positives (FP): 5,463
 
 False Negatives (FN): 9,699
 
-Saved Models
+Saved Models:
 
 loan_model_real.pkl — Trained with real features only
 
 loan_model_synth.pkl — Trained with both real and synthetic features
 
-Performance Insights
+Performance Insights:
 
 Synthetic features provided a modest improvement in both test accuracy and AUC-ROC.
 
@@ -181,7 +183,9 @@ The Real+Synthetic model demonstrated strong calibration, as indicated by the lo
 
 Both models achieved high AUC-ROC values, indicating excellent discriminatory ability.
 
-Lower FP and FN counts in the Real+Synthetic model suggest better generalization.
+Lower false positives and false negatives in the Real+Synthetic model suggest better generalization.
+
+
 ---
 
 ## 📄 License
