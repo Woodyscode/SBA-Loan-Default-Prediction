@@ -62,25 +62,30 @@ Explore predictions and performance in an interactive Streamlit dashboard (no im
 ## ⚙️ Installation
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/your-username/sba-loan-predictor.git
    cd sba-loan-predictor
    ```
 
-2. Install dependencies:
+2. Create and activate a virtual environment:
 
    ```bash
-   pip install -r requirements.txt
+   python -m venv .venv
+   .venv\Scripts\activate        # On Windows
+   source .venv/bin/activate 
    ```
 
-3. Train the models:
+3. Manually install required packages:
 
    ```bash
+   pip install streamlit pandas numpy scikit-learn matplotlib seaborn PyMuPDF pillow joblib openpyxl shap
+   ```
+
+4. Train the Model
+    ```bash
    python src/train_model.py
-   ```
-
-4. Run the dashboard:
+    ```
+6. Run the dashboard:
 
    ```bash
    streamlit run app.py
