@@ -128,7 +128,8 @@ LoanDefaultPredictionModel/
 
 ## 🖼 Visuals
 
-![Dashboard Screenshot](https://via.placeholder.com/800x400.png?text=Insert+your+dashboard+image+here)
+![Dashboard Screenshot](<img width="1264" height="884" alt="image" src="https://github.com/user-attachments/assets/98c38591-2535-4373-ab70-635b27a4270c" />
+)
 
 > Dashboard showing model comparison and feature importances
 
