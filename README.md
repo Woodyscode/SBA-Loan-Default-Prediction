@@ -31,9 +31,9 @@ This project applies a Random Forest classifier to predict loan default for SBA 
 
 ## 🚀 Motivation
 
-When I first began learning about GitHub, I didn’t even know what a README was. I just knew that developers should have cool projects. But as I explored other repositories, I saw that the most inspiring projects had something in common: **a clean, informative README**.
+This project represents my growth from beginner to builder. It combines my interests in machine learning, finance, and product development into something practical and valuable. I wanted to create a solution that could help analysts and lenders better understand borrower risk, while also continuing to improve my own technical and communication skills in the process.
 
-This project is the product of my growing passion in data science, financial modeling, and machine learning. It is designed to be helpful to lenders, analysts, and researchers interested in predicting small business loan outcomes.
+Whether you're a researcher, an aspiring quant, or just curious about data-driven decision making, I hope this project offers insight and value.
 
 ---
 
