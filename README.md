@@ -134,66 +134,54 @@ LoanDefaultPredictionModel/
 
 ---
 
-## 🤝 Contributing
 
-Interested in improving this project?
+##  Model Performance
 
-1. Fork it 🍴
-2. Create a branch (`git checkout -b feature-idea`)
-3. Commit changes (`git commit -m 'Add awesome feature'`)
-4. Push your branch (`git push origin feature-idea`)
-5. Open a Pull Request 🚀
+After preprocessing and training on the SBA loan dataset (897,167 samples), the models achieved the following results:
 
-Please ensure your PRs are well-tested and documented.
+Real Features Model (13 columns)
 
----
+Train Accuracy: 99.61%
 
-## 📊 Model Performance
-After preprocessing and training on the SBA loan dataset (897,167 samples), the models produced the following results:
+Test Accuracy: 92.94%
 
-Real Features Model (13 columns):
+AUC-ROC: 0.960
 
-Train Accuracy: 0.9961
+Brier Score: Not measured
 
-Test Accuracy: 0.9294
+False Positives (FP): 5,952
 
-AUC-ROC Score: 0.960
+False Negatives (FN): 9,887
 
-Brier Score: (not measured in this run)
+Real + Synthetic Features Model (17 columns)
 
-False Positives: 5,952
+Train Accuracy: 100.00%
 
-False Negatives: 9,887
+Test Accuracy: 93.24%
 
-Real + Synthetic Features Model (17 columns):
-
-Train Accuracy: 1.0000
-
-Test Accuracy: 0.9324
-
-AUC-ROC Score: 0.963
+AUC-ROC: 0.963
 
 Brier Score: 0.05195
 
-False Positives: 5,463
+False Positives (FP): 5,463
 
-False Negatives: 9,699
+False Negatives (FN): 9,699
 
-Saved Models:
+Saved Models
 
 loan_model_real.pkl — Trained with real features only
 
 loan_model_synth.pkl — Trained with both real and synthetic features
 
-Performance Insights:
+Performance Insights
 
 Synthetic features provided a modest improvement in both test accuracy and AUC-ROC.
 
-The Real+Synthetic model maintained strong calibration, as indicated by the low Brier score.
+The Real+Synthetic model demonstrated strong calibration, as indicated by the low Brier score.
 
-Both models achieved high AUC-ROC values, indicating excellent discriminatory power.
+Both models achieved high AUC-ROC values, indicating excellent discriminatory ability.
 
-Lower false positives and false negatives in the Real+Synthetic model suggest better generalization.
+Lower FP and FN counts in the Real+Synthetic model suggest better generalization.
 ---
 
 ## 📄 License
@@ -207,33 +195,3 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for m
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-yellow)
 ![Streamlit](https://img.shields.io/badge/WebApp-Streamlit-red)
-
----
-
-## ✅ Tests
-
-Basic model validation metrics are printed to the console during training:
-
-* Accuracy
-* Precision
-* Recall
-* F1-score
-
-You can extend this with unit tests using `pytest` or `unittest` in the future.
-
----
-
-## 🧠 Final Thoughts
-
-> "A good README sets the tone for a great project."
-
-Thank you for checking out this project. Feel free to fork, star, or reach out with ideas.
-
----
-
-**Connect with me**
-GitHub: [your-username](https://github.com/your-username)
-Twitter: [@yourhandle](https://twitter.com/yourhandle)
-LinkedIn: [Your Name](https://linkedin.com/in/yourname)
-
-Happy Coding! ❤️
