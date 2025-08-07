@@ -39,12 +39,23 @@ Whether you're a researcher, an aspiring quant, or just curious about data-drive
 
 ## 🌟 Features
 
-* ✅ Data preprocessing pipeline
-* ✅ Feature engineering (synthetic financial variables like Credit Score, DSCR)
-* ✅ Train/test split with performance evaluation
-* ✅ Comparison of real vs. synthetic feature models
-* ✅ Visual feature importance ranking
-* ✅ Interactive Streamlit dashboard
+Dynamically adjust individual loan features (e.g., credit score, interest rate, number of employees) within the dashboard and receive updated default probability predictions in real time
+
+Simulate realistic loan applications and financial statements by generating synthetic 'fake' documents for testing
+
+Integrate an OCR (Optical Character Recognition) pipeline to extract structured data from uploaded documents and images, feeding that data into the model to estimate default probability
+
+Clean and transform raw SBA loan data using robust preprocessing techniques
+
+Engineer synthetic borrower features such as Credit Score, DSCR, Interest Rate (non-public estimates)
+
+Train and evaluate machine learning models using classification metrics (accuracy, precision, recall, F1-score)
+
+Compare model performance across real vs. synthetic data feature sets
+
+Generate interpretable model insights using feature importance rankings
+
+Explore predictions and performance in an interactive Streamlit dashboard (no image dependencies)
 
 ---
 
