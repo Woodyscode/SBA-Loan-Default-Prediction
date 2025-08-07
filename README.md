@@ -1,10 +1,10 @@
-# 📌 SBA Loan Default Prediction
+#  SBA Loan Default Prediction
 
 Predicting whether an SBA loan will default using machine learning with both real-world and synthetic data.
 
 ---
 
-## 📝 Table of Contents
+##  Table of Contents
 
 1. [About the Project](#about-the-project)
 2. [Motivation](#motivation)
@@ -19,7 +19,7 @@ Predicting whether an SBA loan will default using machine learning with both rea
 
 ---
 
-## 📖 About the Project
+## About the Project
 
 This project applies a Random Forest classifier to predict loan default for SBA loans using historical data. It features:
 
@@ -29,7 +29,7 @@ This project applies a Random Forest classifier to predict loan default for SBA 
 
 ---
 
-## 🚀 Motivation
+## Motivation
 
 This project represents my growth from beginner to builder. It combines my interests in machine learning, finance, and product development into something practical and valuable. I wanted to create a solution that could help analysts and lenders better understand borrower risk, while also continuing to improve my own technical and communication skills in the process.
 
@@ -37,7 +37,7 @@ Whether you're a researcher, an aspiring quant, or just curious about data-drive
 
 ---
 
-## 🌟 Features
+##  Features
 
 Dynamically adjust individual loan features (e.g., credit score, interest rate, number of employees) within the dashboard and receive updated default probability predictions in real time
 
@@ -59,7 +59,7 @@ Explore predictions and performance in an interactive Streamlit dashboard (no im
 
 ---
 
-## ⚙️ Installation
+## ⚙ Installation
 
 1. Clone the repository:
    ```bash
@@ -126,7 +126,7 @@ LoanDefaultPredictionModel/
 
 ---
 
-## 🖼 Visuals
+## Visuals
 
 ![Dashboard Screenshot](images/ModelComparisonScreenshot.jpg)
 
@@ -188,13 +188,13 @@ Lower false positives and false negatives in the Real+Synthetic model suggest be
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
 
 ---
 
-## 🏷️ Badges
+## 🏷 Badges
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-yellow)
